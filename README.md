@@ -1,7 +1,7 @@
 # Simplifying Data Infrastructure with Databricks
 
-**Published:** 2025-08-18
-**Medium:** [https://medium.com/@kyle-t-jones/simplifying-data-infrastructure-with-databricks-8322ca0dc090](https://medium.com/@kyle-t-jones/simplifying-data-infrastructure-with-databricks-8322ca0dc090)
+Published: 2025-08-18
+Medium: [https://medium.com/@kyle-t-jones/simplifying-data-infrastructure-with-databricks-8322ca0dc090](https://medium.com/@kyle-t-jones/simplifying-data-infrastructure-with-databricks-8322ca0dc090)
 
 ## About
 

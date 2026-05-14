@@ -13,11 +13,11 @@ Most enterprises live with fragmented data infrastructure. They rely on multiple
 
 The "as-is" view shows data flows through a patchwork of tools:
 
-- **Ingestion** relies on Kafka, Fivetran, and custom connectors.
-- **Transformation** is handled by Amazon EMR and Athena.
-- **Querying** spans MySQL, Athena, and TensorFlow pipelines.
-- **Governance** uses AWS Glue and IAM.
-- **Orchestration** requires Airflow and Lambda triggers.
+- Ingestion relies on Kafka, Fivetran, and custom connectors.
+- Transformation is handled by Amazon EMR and Athena.
+- Querying spans MySQL, Athena, and TensorFlow pipelines.
+- Governance uses AWS Glue and IAM.
+- Orchestration requires Airflow and Lambda triggers.
 
 Each tool solves part of the problem, but the result is a complex system with multiple points of failure. Data scientists and engineers spend more time stitching together infrastructure than building models or insights. Worse, serving models and connecting them to business applications is often left undefined or ad hoc.
 
@@ -26,32 +26,32 @@ The second diagram --- the "to-be" state --- shows a very different pict
 
 The "to-be" architecture shows how Databricks consolidates these layers into a unified Lakehouse platform. Instead of juggling multiple services, teams gain a single environment that supports the entire lifecycle:
 
-**Sources and Ingestion**
+Sources and Ingestion
 
 - Structured data from ERP and business apps.
 - Unstructured sensor data and IoT streams.
 - On-premises files, images, and video.
-- Ingestion handled seamlessly with **Auto Loader** and **Delta Live Tables**.
+- Ingestion handled seamlessly with Auto Loader and Delta Live Tables.
 
-**Storage and Transformation**
+Storage and Transformation
 
-- Data lands in **Delta Lake** with Bronze, Silver, and Gold tiers for raw, refined, and curated datasets.
-- Transformation and engineering are powered by **Spark** within the same environment.
+- Data lands in Delta Lake with Bronze, Silver, and Gold tiers for raw, refined, and curated datasets.
+- Transformation and engineering are powered by Spark within the same environment.
 
-**Governance and Orchestration**
+Governance and Orchestration
 
-- **Unity Catalog** provides a single pane for governance, security, and lineage.
-- **Workflows** support orchestration, CI/CD, and MLOps pipelines without external schedulers.
+- Unity Catalog provides a single pane for governance, security, and lineage.
+- Workflows support orchestration, CI/CD, and MLOps pipelines without external schedulers.
 
-**Machine Learning and Serving**
+Machine Learning and Serving
 
-- **MLflow** manages experiments, models, and feature stores.
+- MLflow manages experiments, models, and feature stores.
 - Real-time serving integrates directly into downstream apps.
 
-**Analytics and Business Outputs**
+Analytics and Business Outputs
 
-- BI and SQL queries are handled natively with **Databricks SQL** and serverless options.
-- Data sharing across teams and partners is enabled with **Delta Sharing**.
+- BI and SQL queries are handled natively with Databricks SQL and serverless options.
+- Data sharing across teams and partners is enabled with Delta Sharing.
 
 
 Governance and orchestration are not bolted on from the outside. Unity Catalog provides a central layer for security, lineage, and access control, while Databricks Workflows handle CI/CD and MLOps pipelines. This means the same system that ingests and transforms data also governs it and automates the flow from development to production. Machine learning runs in the same environment, with MLflow managing experiments, feature stores, and models. Serving is no longer an afterthought but integrated natively, enabling real-time applications without needing a separate toolchain.
@@ -63,9 +63,9 @@ The difference between the two diagrams is stark. The "as-is" world is fragmente
 #### From Complexity to Simplicity
 What once required half a dozen systems is now handled within a single platform. The benefits are clear:
 
-- **Lower operational burden** --- Fewer moving parts mean less maintenance and fewer integration headaches.
-- **Faster time to value** --- Teams can move from raw data to production ML and BI faster.
-- **Unified governance** --- Security and compliance are consistent across structured and unstructured data.
-- **Scalability** --- The same architecture supports batch, streaming, AI, and BI workloads.
+- Lower operational burden --- Fewer moving parts mean less maintenance and fewer integration headaches.
+- Faster time to value --- Teams can move from raw data to production ML and BI faster.
+- Unified governance --- Security and compliance are consistent across structured and unstructured data.
+- Scalability --- The same architecture supports batch, streaming, AI, and BI workloads.
 
 The diagrams tell a simple story. Legacy architectures sprawl across multiple tools, while Databricks consolidates them into a Lakehouse that simplifies the entire data lifecycle. For organizations wrestling with data silos, governance challenges, and rising infrastructure costs, this shift is not just about efficiency --- it's about enabling teams to focus on outcomes rather than plumbing.
