@@ -11,14 +11,7 @@ Most enterprises live with fragmented data infrastructure. They rely on multiple
 
 Each tool solves part of the problem, but the result is a complex system with multiple points of failure. Data scientists and engineers spend more time stitching together infrastructure than building models or insights. Worse, serving models and connecting them to business applications is often left undefined or ad hoc.
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
